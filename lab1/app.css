@@ -1,0 +1,123 @@
+
+html,body
+{
+  background-color:lightgray;
+}
+
+header{
+    background-color:#cc3300;
+    padding:1em;
+    height: 80px;
+   
+
+}
+h1{
+    font-size: 35px;
+	padding: 0.5em 1em;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+  
+
+}
+title{
+  
+}
+.fill{
+    flex:1;
+}
+a{
+    text-decoration: none;
+    flex:1;
+    font-size: 20px;
+    padding: 1em;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: -23px;
+}
+footer
+{
+    text-align: bottom;
+    padding: 1em;
+    
+
+    font-family: 'Bree Serif', serif;
+
+ 
+
+}
+
+.foot{
+
+ position: absolute;
+    bottom: 0;
+    width: 644px;
+    height: 0px;
+    margin: 0 auto;
+    font-family: 'Bree Serif', serif;
+ 
+
+}
+
+footer.container{
+    align-self: flex-end;
+    
+ position: absolute;
+    bottom: 0;
+    width: 644px;
+    height: 0px;
+    margin: 0 auto;
+    font-family: 'Bree Serif', serif;
+ 
+}
+.logo{
+    align-content: center;
+}
+h2
+{
+    font-family: 'Dancing Script', cursive;
+
+}
+table,th,td{
+  font-family: 'Cuprum', sans-serif;
+ padding: 2.25em;   
+ background-color:whitesmoke;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#cc3300;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color:#cc3300;
+}
+button{
+     background-color:#cc3300;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
