@@ -25,6 +25,7 @@ h1{
 	padding: 0.5em 1em;
     color:white;
     font-family: 'Dancing Script', cursive;
+    font-size:250%;
   
 
 }
@@ -114,6 +115,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size:200%;
 }
 
 li a:hover {
