@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="tip.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+	<link rel=" icon" href="http://cdn.shopify.com/s/files/1/0736/3911/t/1/assets/favicon.png?7941968939387777154">
+	<title>Tip Calculator</title>
+</head>
+
+<body>
+	<header>
+		<section class="container">
+			<img class="logo" src="http://itgroove.net/brainlitter/wp-content/uploads/sites/3/2015/07/Tip.jpg" alt="" style="width:90px;height:60px;">
+			<h1>Tip Calculator</h1>
+			<span class="fill"></span>
+		</section>
+	</header>
+	<main>
+		<div class="amount">
+            <fieldset>
+  <span> Bill  :</span>
+  $ <input type="text" id="bill" class="amount-field"> <br>
+            </fieldset>
+            <fieldset>
+    <label  for="tipPercentage">Tip%:</label><br>
+            <input type="text" id="percentTip"><br><br>
+            </fieldset>
+            <fieldset
+            <label  for="tip">Tip:</label><br>
+            <input   type="text" id="tip" disabled="disabled"><br><br>
+<fieldset>
+            <label  for="totalamount">Total:</label><br>
+            <input  type="text" id="totalamount" disabled="disabled"><br><br>
+</fieldset>
+<fieldset>            <label>&nbsp;</label>
+            <br>
+            <input class="button"  type="button" id="calculate" value="Calculate"><br>
+  </fieldset>                                          
+</div>
+
+	</main>
+
+	<script src="tip.js"></script>
+</body>
+
+</html>
