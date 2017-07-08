@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	
+
+	<link rel=" icon" href="http://cdn.shopify.com/s/files/1/0736/3911/t/1/assets/favicon.png?7941968939387777154">
+	<title> Home-CalPizza</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+	<header>
+
+		<section class="container" >
+			<img class="logo" src="http://lh6.ggpht.com/raTqkvNCCyy25tiX22VKq1uSnVUqKspeJ5opFceK0Vjnf3mzUfwfI6X2QSMrrIWsUkI=w300" alt="" style="width:100px;height:100px;">
+			<h1>CalPizza</h1>
+			<span class="fill"></span>
+			<ul>
+				<li><a class="active" href="menu.html">Menu</a></li>
+				<li><a href="Statuses.html">Order</a></li>
+				<li><a href="index.html">Statuses</a></li>
+				<li><a href="create-food-item.html" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-shopping-cart"></span> Admin Panel
+        </a></li>
+
+			</ul>
+
+		</section>
+	</header>
+	<main>
+		<h3>Order Statuses: Track Orders</h3>
+		<table class="order_status_table center " border="1" width="100%" id="myTable">
+			<thead>
+				<tr>
+					<th onclick="sortTable(0)">Created</th>
+					<th onclick="sortTable(1)">Item</th>
+					<th onclick="sortTable(2)">Quantity</th>
+					<th onclick="sortTable(3)">Status</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						17TH June,2017
+
+					</td>
+					<td>
+
+						<img src="http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png" alt="60" height="100" width="80"> Pepperoni
+						Pizza
+					</td>
+					<td>
+						Bhupen Malik
+					</td>
+					<td>
+						In Progress
+
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						17TH June,2017
+
+					</td>
+					<td>
+
+						<img src="http://2.bp.blogspot.com/_UIXOn06Pz70/SQjftuw55nI/AAAAAAAAFNE/6b4v-FDMQFs/s800/Thai+Chicken+Pizza+with+Spicy+Peanut+Sauce+500.jpg"
+						 alt="60" height="100" width="80"> Thai Pizza
+					</td>
+					<td>
+						Roxana
+					</td>
+					<td>
+						In Progress
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						17TH June,2017
+
+					</td>
+					<td>
+
+						<img src="http://www.academiabarilla.com/anteprima_pizzamargherita_xhm1p-2_1200.jpg?h=faa3bae42d7180a508c490395249247ded3f362c"
+						 alt="60" height="100" width="80"> Margherita Pizza
+					</td>
+					<td>
+						John
+					</td>
+					<td>
+						Order Completed
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						17TH June,2017
+
+					</td>
+					<td>
+
+						<img src="http://lh5.ggpht.com/_OaYG005JPDs/S8oAO9WPAGI/AAAAAAAABJI/MK-jneaOx88/s640/BBQ%20Chicken%20Pizza.jpg" alt="60"
+						 height="100" width="80"> BBQ Chicken Pizza
+					</td>
+					<td>
+						Vivian R. James
+					</td>
+					<td>
+						In Progress
+
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</main>
+	<footer>
+
+		<p> © 2017 CalPIZZA-All Rights Reserved </p>
+	</footer>
+	<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 3); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+	
+	
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+	<script src="app.js"></script>
+</body>
+
+</html>
