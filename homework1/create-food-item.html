@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+	<link rel=" icon" href="http://cdn.shopify.com/s/files/1/0736/3911/t/1/assets/favicon.png?7941968939387777154">
+	<title> Home-CalPizza</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+	<header>
+
+		<section class="container" >
+			<img class="logo" src="http://lh6.ggpht.com/raTqkvNCCyy25tiX22VKq1uSnVUqKspeJ5opFceK0Vjnf3mzUfwfI6X2QSMrrIWsUkI=w300" alt="" style="width:100px;height:100px;">
+			<h1>CalPizza-Admin</h1>
+			<span class="fill"></span>
+			<ul>
+				<li><a class="active" href="Inventory.html">Inventory</a></li>
+				|
+				<li><a href="create-food-item.html">Create new FoodItem</a></li>
+				|
+				<li><a href="menu.html">Menu</a></li>
+			
+
+			</ul>
+
+		</section>
+	</header>
+	<main>
+		<h2>Add new Food</h2>
+	<form id="create_menu">
+
+        <tr><td>
+            <fieldset
+                <label><h3>Name</h3></label></br>
+                <input type="text" name="name" id="FoodItem_name" size="60" ></input>
+                <br>
+                <label><h3>Image URL</h3></label></br>
+                <input type="text" name="image" id="FoodItem_image" size="60"></input>
+                <br>
+                <label><h3>Description</h3></label></br>
+                <input type="text" name="description" id="FoodItem_description" size="60" ></input>
+                <br>
+				<label><h3>Price</h3></label></br>
+                <input type="text" name="price" id="FoodItem_price" size="60"></input>
+				<br><br>
+</fieldset>
+                <button id="add_menu_button" type="button">Add Food</button>
+				
+
+            </td>
+        </tr>
+    </form>
+        
+		<h3>Go back to menu,whenever you want to order!
+						<a href="menu.html" class="link">
+							<h4>Here</h4>
+						</a>
+					</h3>
+	</main>
+	<footer>
+		<p>© 2017 CalPIZZA-All Rights Reserved</p>
+	</footer>
+	<script src="app.js"></script>
+</body>
+</html>
