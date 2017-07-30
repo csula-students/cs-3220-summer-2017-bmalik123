@@ -1,0 +1,180 @@
+@charset "ISO-8859-1";
+
+html,body
+{
+  background-color:lightgray;
+}
+
+header{
+    background-color:#cc3300;
+    padding:1em;
+    height: 100%;
+  
+    width: 100%;
+    height: 0;
+    padding: 0 0 120px;
+    border: 1px solid;
+   
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+   
+
+}
+td:hover{
+    color:lightslategray;
+    
+}
+h1{
+    font-size: 35px;
+	padding: 0.5em 1em;
+    color:white;
+    font-family: 'Dancing Script', cursive;
+    font-size:250%;
+  
+
+}
+
+.fill{
+    flex:1;
+}
+a{
+    text-decoration: none;
+    flex:1;
+    font-size: 20px;
+    padding: 1em;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: -20px;
+}
+footer
+{
+    text-align: bottom;
+    padding: 1em;
+    
+
+    font-family: 'Bree Serif', serif;
+
+ 
+
+}
+
+.foot{
+
+ position: fixed;
+    bottom: 0;
+    width: 644px;
+    height: 0px;
+    margin: 0 auto;
+    font-family: 'Bree Serif', serif;
+ 
+
+}
+
+footer.container{
+    align-self: flex-end;
+    
+ position: fixed;
+    bottom: 0;
+    width: 644px;
+    height: 0px;
+    margin: 0 auto;
+    font-family: 'Bree Serif', serif;
+ 
+}
+.logo{
+   
+}
+h3
+{
+    font-family: 'Dancing Script', cursive;
+   font-size: 170%;
+
+}
+h2
+{
+    font-family: 'Dancing Script', cursive;
+   font-size: 300%;
+
+}
+table,th,td{
+  font-family: 'Cuprum', sans-serif;
+ padding: 2.25em;   
+ background-color:whitesmoke;
+ text-align:center;
+ width:100%;
+ table-layout:fixed;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#cc3300;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:200%;
+}
+
+li a:hover {
+    background-color:#cc3300;
+}
+button{
+     background-color:#cc3300;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 0px;
+    cursor: pointer;
+    width: 100%;
+  
+
+}
+button:hover{
+     background-color: #f44336;
+    color: white;
+}
+.small{
+     width: 80%;
+    height: auto;
+}
+.cart-table title{
+     font-family: 'Bree Serif', serif;
+}
+.link{
+    color: red;
+}
+.clear_history_button:hover{
+      background-color: #f44336;
+    color: white;
+}
+.confirm_order_button{
+    float: right;
+    position: relative;
+}
+table{
+	width=100%;
+}
+
+td,tr {
+		border:3px solid lightgray;
+		
+	}
