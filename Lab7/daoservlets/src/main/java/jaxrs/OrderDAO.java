@@ -85,7 +85,7 @@ public class OrderDAO implements DAO<Order> {
 			pstmt.executeUpdate();
 
 			PreparedStatement ps = c.prepareStatement("INSERT INTO order_foods (order_id, food_id) VALUES (?, ?)");
-			ps.setInt(1, orders.getId() + 1);
+			ps.setInt(1, orders.getId());
 			ps.setInt(2, orders.getfoodItems().getId());
 			ps.executeUpdate();
 
